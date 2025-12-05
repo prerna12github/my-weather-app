@@ -38,7 +38,7 @@ const Weather = () => {
     setWeather(null);
 
     try {
-      const API_KEY = "b47c6623a83d2b325f1c3cb09b54fbeb";
+     const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;;
 
       const res = await fetch(
         `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
