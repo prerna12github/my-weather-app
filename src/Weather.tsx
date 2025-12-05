@@ -94,22 +94,22 @@ const Weather = () => {
         </h1>
 
         {/* SEARCH BAR */}
-        <div className="flex gap-2">
-          <input
-            type="text"
-            placeholder="Enter city..."
-            value={city}
-            onChange={(e) => setCity(e.target.value)}
-            className="flex-1 px-4 py-2 rounded-lg bg-gray-800 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
+        <div className="flex flex-col sm:flex-row gap-2">
+  <input
+    type="text"
+    placeholder="Enter city..."
+    value={city}
+    onChange={(e) => setCity(e.target.value)}
+    className="w-full sm:flex-1 px-4 py-2 rounded-lg bg-gray-800 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+  />
 
-          <button
-            onClick={getWeather}
-            className="px-4 py-2 bg-blue-600 rounded-lg hover:bg-blue-700 transition"
-          >
-            Search
-          </button>
-        </div>
+  <button
+    onClick={getWeather}
+    className="w-full sm:w-auto px-4 py-2 bg-blue-600 rounded-lg hover:bg-blue-700 transition"
+  >
+    Search
+  </button>
+</div>
 
         {/* ERROR MESSAGE */}
         {error && (
