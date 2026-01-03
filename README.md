@@ -5,6 +5,11 @@ It fetches real-time weather details using the **OpenWeatherMap API** and displa
 
 ---
 
+## 🚀 Live Demo
+
+🌸 **Try the app here:**  
+👉 https://prerna-weather.netlify.app/
+
 ## 🚀 Features
 
 - 🔍 Search weather by city  
